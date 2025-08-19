@@ -22,7 +22,7 @@ const NavBar = async () => {
           {session && session?.user ? (
             <>
               <Link href={"/startup/create"}>
-                <span className="max-sm:hidden">Create</span>
+                <span className="max-sm:hidden hover:font-bold">Create</span>
                 <BadgePlus className="size-6 sm:hidden text-red-500" />
               </Link>
 
@@ -33,7 +33,7 @@ const NavBar = async () => {
                 }}
               >
                 <button type="submit" className="cursor-pointer">
-                  <span className="max-sm:hidden">Logout</span>
+                  <span className="max-sm:hidden hover:font-bold">Logout</span>
                   <LogOut className="size-6 sm:hidden text-red-500" />
                 </button>
               </form>
