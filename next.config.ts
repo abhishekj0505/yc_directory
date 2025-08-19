@@ -7,8 +7,8 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: true,
   },
 
-  eslint : {
-    ignoreDuringBuilds : true
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 
   images: {
@@ -22,6 +22,7 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     ppr: "incremental",
+    after: true,
   },
   devIndicators: {
     appIsrStatus: true,
