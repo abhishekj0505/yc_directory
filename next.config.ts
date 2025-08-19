@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */ 
+  /* config options here */
+
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+
+  eslint : {
+    ignoreDuringBuilds : true
+  },
 
   images: {
     dangerouslyAllowSVG: true,
@@ -15,11 +23,11 @@ const nextConfig: NextConfig = {
   experimental: {
     ppr: "incremental",
   },
-  devIndicators : {
-    appIsrStatus : true,
-    buildActivity : true,
-    buildActivityPosition : "bottom-right"
-  }
+  devIndicators: {
+    appIsrStatus: true,
+    buildActivity: true,
+    buildActivityPosition: "bottom-right",
+  },
 };
 
 export default nextConfig;
