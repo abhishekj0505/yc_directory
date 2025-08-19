@@ -57,7 +57,7 @@ const NavBar = async () => {
               className="flex items-center"
             >
               <button type="submit" className="cursor-pointer">
-                <span>Login</span>
+                <span className="hover:font-bold">Login</span>
               </button>
             </form>
           )}
